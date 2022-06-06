@@ -1,12 +1,13 @@
-import React, { useState, useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
+import React from "react";
 
 const Login = () => {
   return (
     <div>
-      <input data-cy="login-email" />
-      <input data-cy="login-password" />
-      <button data-cy="login-submit"></button>
+    
+      <input data-cy="login-email" placeholder="Enter your email"/><br/>
+
+      <input data-cy="login-password" type={"password"}  placeholder = "Enter your Password "/><br/>
+      <button data-cy="login-submit">Login</button>
     </div>
   );
 };
